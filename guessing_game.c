@@ -7,7 +7,8 @@ int main() {
   int no_of_guess = 0;
   srand(time(NULL));
   
-  printf("Welcome to the world of Guessing Numbers\n");
+  printf("\n\nWelcome to the world of Guessing Numbers\n");
+  printf("\n*** Designed By Mohit Mishra ***");
   random = rand() % 100 + 1; // Generating between 0 to 100
 
   do {
