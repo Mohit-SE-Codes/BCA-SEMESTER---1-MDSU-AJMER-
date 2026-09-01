@@ -24,7 +24,8 @@ int main() {
   int user_index;
   while (1) {
     printf ("\nWelcome to User Management");
-    printf ("\n1. Register");
+    printf("\n*** Designed By Mohit Mishra ***");
+    printf ("\n\n1. Register");
     printf ("\n2. Login");
     printf ("\n3. Exit");
     printf ("\nSelect an option: ");
