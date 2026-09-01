@@ -40,6 +40,7 @@ int main() {
   srand(time(NULL));
   set_terminal_attributes();
   printf("\t\t%sChalo Kehlte hain KAUN BANEGA CROREPATI !!!%s", PINK, COLOR_END);
+  printf("\n*** Designed By Mohit Mishra ***");
   Question* questions;
   int no_of_questions = read_questions("questions.txt", &questions);
   play_game(questions, no_of_questions);
@@ -81,20 +82,20 @@ void play_game(Question* questions, int no_of_questions) {
     if (ch == questions[i].correct_option) {
       printf("%s\nCorrect!%s", GREEN, COLOR_END);
       money_won = questions[i].prize_money;
-      printf("\n%sYou have won: Rs %d%s", BLUE, money_won, COLOR_END);
+      printf("\n%sSAHI JAWAB ! \n AUR \n AAP JEET GAYE HAI: Rs %d%s", BLUE, money_won, COLOR_END);
     } else {
-      printf("%s\nWrong! Correct answer is %c.%s", RED, questions[i].correct_option, COLOR_END);
+      printf("%s\n Galat Jawab! Correct answer is %c.%s", RED, questions[i].correct_option, COLOR_END);
       break;
     }
   }
-  printf("\n\n%sGame Over! Your total winnings are: Rs %d%s\n", BLUE,  money_won, COLOR_END);
+  printf("\n\n%sAAP HAAR CHUKE HAIN ! \n AUR \n YE HAI AAPKI JEETI HUI RASHI: Rs %d%s\n", BLUE,  money_won, COLOR_END);
 }
 
 int use_lifeline(Question* question, int* lifeline) {
   printf("\n\n%sAvailable Lifelines:%s", PINK, COLOR_END);
   if (lifeline[0]) printf("\n%s1. Fifty-Fifty (50/50)%s", PINK, COLOR_END);
   if (lifeline[1]) printf("\n%s2. Skip the Question%s", PINK, COLOR_END);
-  printf("\n%sChoose a lifeline or 0 to return: %s", PINK, COLOR_END);
+  printf("\n%sle sakte hai lifeline ya fir 0 to return: %s", PINK, COLOR_END);
 
   char ch = getchar();
   printf("%c", ch);
@@ -123,7 +124,7 @@ int use_lifeline(Question* question, int* lifeline) {
     }
     break;
   default:
-    printf("\n%sReturning to the Question.%s", PINK, COLOR_END);
+    printf("\n%sWapas se Prashn Pe Aaate Hain.%s", PINK, COLOR_END);
     break;
   }
   return 0;
@@ -136,14 +137,14 @@ void print_formatted_question(Question question) {
       printf("%s%c. %s%s", AQUA, ('A' + i), question.options[i], COLOR_END);
     }
   }
-  printf("\n%sHurry!! You have only %d Seconds to answer..%s", YELLOW, question.timeout, COLOR_END);
-  printf("\n%sEnter your answer (A, B, C, or D) or L for lifeline: %s", GREEN, COLOR_END);
+  printf("\n%sJALDI KIJIYE !! AAPKE PASS KEWAL %d Seconds HAI SAHI JAWAB DENE KE LIYE..%s", YELLOW, question.timeout, COLOR_END);
+  printf("\n%sAPNA JAWAB CHUNE (A, B, C, or D) ya Phir L lifeline ke Liye: %s", GREEN, COLOR_END);
 }
 
 int read_questions(char* file_name, Question** questions) {
   FILE *file = fopen(file_name, "r");
   if (file == NULL) {
-    printf("\nUnable to open the questions bank.");
+    printf("\nquestions bank nahi khul raha hai");
     exit(0);
   }
   char str[MAX_QUES_LEN];
