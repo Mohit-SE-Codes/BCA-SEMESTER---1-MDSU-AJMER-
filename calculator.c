@@ -75,6 +75,7 @@ double modulus(int a, int b) {
 void print_menu() {
   printf("\n\n---------------------------------");
   printf("\nWelcome to Simple Calculator\n");
+  printf("\n*** Designed By Mohit Mishra ***");
   printf("\nChoose one of the following options:");
   printf("\n1. Add");
   printf("\n2. Subtract");
