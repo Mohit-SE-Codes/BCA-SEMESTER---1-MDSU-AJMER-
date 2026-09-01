@@ -150,6 +150,8 @@ void draw() {
   clear_screen();
   printf("\t\tWelcome to The Snake Game!!!");
   printf("\n");
+  printf("\n*** Designed By Mohit Mishra ***");
+  printf("\n");
   for (int i = 0; i < WIDTH + 2; i++) {
     printf("#");
   }
