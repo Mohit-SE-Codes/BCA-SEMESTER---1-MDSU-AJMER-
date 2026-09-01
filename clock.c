@@ -33,6 +33,8 @@ void clear_screen() {
 
 int input_format() {
   int format;
+  printf("\n\n*** Designed By Mohit Mishra ***");
+  printf("\n*** Welcome to the Clock Program ***");
   printf("\nChoose the time format: ");
   printf("\n1. 24 Hour format");
   printf("\n2. 12 Hour format (default)");
