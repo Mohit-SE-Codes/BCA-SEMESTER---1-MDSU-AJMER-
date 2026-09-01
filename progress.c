@@ -42,6 +42,7 @@ int main() {
     sleep(1); // Sleep for 1 second
   }
   printf("All tasks completed!\n");
+  printf("\n*** this C Program is Designed By Mohit Mishra ***");
   return 0;
 }
 
