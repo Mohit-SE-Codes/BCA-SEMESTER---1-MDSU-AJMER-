@@ -18,6 +18,7 @@ int solve_puzzle(int puzzle[9][9], int row, int col);
 
 int main() {
   printf("\n\tWelcome to SUDOKU Solver !!!");
+  printf("\n*** Designed By Mohit Mishra ***");
   printf("\n\nOriginal Puzzle:");
   print_puzzle(puzzle);
   if (solve_puzzle(puzzle, 0, 0)) {
