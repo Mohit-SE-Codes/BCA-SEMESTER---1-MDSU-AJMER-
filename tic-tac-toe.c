@@ -31,6 +31,7 @@ int main() {
   input_difficulty();
   do {
     play_game();
+    printf("\n*** TIC=TAC=TOE GAME Designed By Mohit Mishra ***");
     printf("\nPlay again? (1 for yes, 0 for no): ");
     scanf("%d", &choice);
   } while (choice == 1);
