@@ -18,6 +18,7 @@ int main() {
   while (1) {
     int choice;
     printf("\n\n*** Bank Management System ***");
+    printf("\n*** Designed By Mohit Mishra ***");
     printf("\n1. Create Account");
     printf("\n2. Deposit Money");
     printf("\n3. Withdraw Money");
